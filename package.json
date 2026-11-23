@@ -1,0 +1,19 @@
+{
+  "name": "league-ledger-genlayer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A public tournament ledger whose standings are derived from consensus-read scoreboards.",
+  "scripts": {
+    "test": "env -u PYTHONPATH -u VIRTUAL_ENV -u PYTHONHOME uv run --python 3.13 --with pytest --with genlayer-test pytest tests/direct -q",
+    "deploy": "node scripts/deploy_studionet.js",
+    "e2e": "node scripts/e2e_studionet.js",
+    "build:app": "esbuild app/src.js --bundle --minify --format=iife --platform=browser --outfile=app/bundle.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "genlayer-js": "1.1.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}

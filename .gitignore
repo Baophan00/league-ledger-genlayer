@@ -1,0 +1,9 @@
+node_modules/
+artifacts/
+.pytest_cache/
+__pycache__/
+*.pyc
+.DS_Store
+scripts/.league-ledger-keys.json
+scripts/.e2e-keys.json
+*.log
